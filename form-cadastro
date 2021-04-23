@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<title>CADASTRO DE ALUNO DO RODRIGO</title>
+	<style>
+		body{
+			margin-left: 530px
+		}
+	</style>
+	<script type="text/javascript">
+		function fncenviar(){
+			var NomeCompleto=document.FormCadastro.NomeCompleto.value;
+			var DataNascimento=document.FormCadastro.DataNascimento.value;
+			var Sexo=document.FormCadastro.SexoLista.value;
+			var Email=document.FormCadastro.Email.value;
+			var NomePai=document.FormCadastro.NomePai.value;
+			var NomeMae=document.FormCadastro.NomeMae.value;
+			var EnderecoResidencial=document.FormCadastro.EnderecoResidencial.value;
+			var Cep=document.FormCadastro.Cep.value;
+			var Estado=document.FormCadastro.Estado.value;
+			var Cidade=document.FormCadastro.Cidade.value;
+			var Bairro=document.FormCadastro.Bairro.value;
+			var TelResidencial=document.FormCadastro.TelResidencial.value;
+			var TelCelular=document.FormCadastro.TelCelular.value;
+			
+			document.writeln("Nome Completo: "+NomeCompleto+"<br />");
+			document.writeln("Data de Nacimento: "+DataNascimento+"<br />");
+			document.writeln("Sexo: "+Sexo+"<br />");
+			document.writeln("Email: "+Email+"<br />");
+			document.writeln("Nome do Pai: "+NomePai+"<br />");
+			document.writeln("Nome da Mãe: "+NomeMae+"<br />");
+			document.writeln("Endereço Residencial: "+EnderecoResidencial+"<br />");
+			document.writeln("Cep: "+Cep+"<br />");
+			document.writeln("Estado: "+Estado+"<br />");
+			document.writeln("Cidade: "+Cidade+"<br />");
+			document.writeln("Bairro: "+Bairro+"<br />");
+			document.writeln("Tel. Residencial "+TelResidencial+"<br />");
+			document.writeln("Tel. Celular: "+TelCelular+"<br />");
+			}
+	</script>
+
+  </head>
+<body>
+	<h3>cadastro de aluno</h3>
+<form method="post" id="FormCadastro" name="FormCadastro" action="">
+	<br />
+	<div>
+		<label for="nome">NOME COMPLETO:</label><br>
+		<input type="text" id="NomeCompleto" size="25"/>
+	</div>
+	<br />
+	<div>
+		<label for="birthday">DATA DE NASC.:</label><br> 
+		<input type="date" id="DataNascimento" />
+	</div>
+	<br />
+	<div>
+		<label for="nome">SEXO:</label><br>
+		<input type="hidden" id="Sexo" />
+		<select id="SexoLista">
+			<option value="Escolha">ESCOLHA</option>
+			<option value="Masculino">MASCULINO</option>
+			<option value="Feminino">FEMININO</option>
+			<option value="Outros">OUTROS</option>
+		<select>
+	</div>
+	<br />
+	<div>
+		<label for="nome">EMAIL:</label><br>
+		<input type="text" id="Email" size="25" />
+	</div>
+	<br />
+	<div>
+		<label for="nome">NOME DO PAI:</label><br>
+		<input type="text" id="NomePai" size="25"/>
+	</div>
+	<br />
+	<div>
+		<label for="nome">NOME DA MÃE:</label><br>
+		<input type="text" id="NomeMae" size="25"/>
+	</div>
+	<br />
+	<div>
+		<label for="nome">ENDEREÇO RESIDENCIAL:</label><br>
+				<input type="text" id="EnderecoResidencial" size="25" />
+	</div>
+	<br />
+	<div>
+		<label for="nome">CEP:</label><br>
+		<input type="text" id="Cep" size="25" />
+	</div>
+	<br />
+	<div>
+		<label for="nome">ESTADO:</label><br>
+		<input type="text" id="Estado" size="25" />
+	</div>
+	<br />
+	<div>	
+		<label for="nome">CIDADE:</label><br>
+		<input type="text" id="Cidade" size="25" />
+	</div>
+	<br />
+	<div>	
+		<label for="nome">BAIRRO:</label><br>
+		<input type="text" id="Bairro" size="25" />
+	</div>
+	<br />
+	<div>
+		<label for="nome">TELEFONE RESIDENCIAL:</label><br>
+		<input type="texte" id="TelResidencial" size="25" />
+	</div>
+	<br />
+	<div>	
+		<label for="nome">TELEFONE CELULAR:</label><br>
+		<input type="text" id="TelCelular" size="25" />
+	</div>
+	<br />
+	<div>
+		<input type="button" value="enviar" id="bnt_enviar"
+		onclick="fncenviar()"/> 
+	</div>
+	
+</form>
+</body>
+</html>
